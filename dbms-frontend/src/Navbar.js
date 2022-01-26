@@ -1,0 +1,52 @@
+import React from 'react'
+import './navbar.css';
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+
+import { useState } from 'react';
+import {Link} from 'react-router-dom';
+import {SidebarData} from './SidebarData';
+import {IconContext} from 'react-icons'
+function Navbar({setLoginUser}) {
+    const [sidebar,setSidebar]=useState(false)
+    const showSidebar=()=>setSidebar(!sidebar)
+    return (
+        <IconContext.Provider value={{color:'#fff'}}>
+            <div className="navbar">
+                <Link to="#" className='menu-bars'>
+                    <FaIcons.FaBars size={35} onClick={showSidebar}/>
+                </Link>
+                <p className='mainTitle'> REALTOR ATLAS
+                </p>
+                <Link to='/dashboard' className='dashLink'>
+                    Go to Dashboard 
+                </Link>
+                <Link to='/' className='logBtn'>Logout</Link>
+                
+            </div>
+            <nav className={sidebar?'nav-menu active':'nav-menu'}>
+                <ul className='nav-menu-items' onClick={showSidebar}>
+                    <li className='navbar-toggle'>
+                        <Link to='#' className='menu-bars'>
+                            <AiIcons.AiOutlineClose/>
+                        </Link>
+                    </li>
+                    {SidebarData.map((sData,index)=>{
+                        return(
+                            <li key={index} className={sData.cName}>
+                                <Link to={sData.path} >
+                                    {sData.icon}
+                                    <span id='navTitle'>
+                                    {sData.title}
+                                    </span>
+                                </Link>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </nav>
+        </IconContext.Provider>
+    )
+}
+
+export default Navbar

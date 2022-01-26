@@ -1,0 +1,275 @@
+.body {
+  height: 1200px;
+  background-color: #f5f6fc;
+}
+.housePage,
+.pgPage {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5vh;
+  width: 95vw;
+  border: 2px solid;
+  flex-direction: column;
+}
+.reqPage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 5vh;
+  width: 95vw;
+  border: 2px solid;
+}
+.optionsButton {
+  width: 95%;
+  align-self: center;
+}
+#btn {
+  width: 30%;
+  margin: 10px 40px 10px 40px;
+  font-size: 20px;
+  height: 60px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #6678a8;
+  color: white;
+}
+#btn:focus {
+  background: #112866;
+}
+#btn1 {
+  width: 20%;
+  margin: 10px 10px 10px 10px;
+  font-size: 20px;
+  height: 60px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #6678a8;
+  color: white;
+}
+#btn1:focus {
+  background: #112866;
+}
+#btn:hover {
+  background: #3055b9;
+}
+.width7 {
+  width: 7%;
+}
+.width15 {
+  width: 15%;
+}
+.width20 {
+  width: 20%;
+}
+.width25 {
+  width: 25%;
+}
+.width30 {
+  width: 30%;
+}
+.width8 {
+  width: 8%;
+}
+.width35 {
+  width: 35%;
+}
+
+th {
+  padding: 8px 0px;
+  background-color: #5e6e9b;
+  color: white;
+  font-size: 15px;
+}
+.contentTr {
+  border-radius: 15px 15px 15px 15px;
+}
+td {
+  text-align: center;
+  background-color: #d6ddf5;
+  font-family: "Nunito", sans-serif;
+  height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+}
+.table-users {
+  margin: 15px auto;
+  /* width: 900px; */
+}
+.listAll {
+  margin: 5vh auto;
+}
+.listAllData {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10vh auto;
+}
+.listAllPGData {
+  width: 200vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5vh auto;
+}
+.table-pgs {
+  margin: 5vh 10px;
+}
+.table-rqs {
+  margin: 5vh auto;
+  width: 90%;
+}
+.headingCat {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.myTable {
+  margin: 3vh auto;
+  width: 90%;
+}
+.myTitle {
+  font-size: 25px;
+  margin-left: 140px;
+}
+.myPGTable {
+  margin: auto;
+  width: 85%;
+}
+.addBtn {
+  float: right;
+  margin-right: 6vw;
+  background-color: #5e6e9b;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.addPGBtn {
+  float: right;
+  margin-right: 12vw;
+  background-color: #5e6e9b;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.mainContainer {
+  margin: 30px auto;
+  /* border: 0.2px solid; */
+  width: 70%;
+  border: 2px solid black;
+  height: fit-content;
+}
+.addNewApp {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+}
+.hName {
+  float: left;
+  /* margin-left: ; */
+  /* width: 40%; */
+}
+.addressDetails {
+  float: right;
+  margin-left: 50px;
+}
+.inputName {
+  width: 15vw;
+  height: 5vh;
+  margin-top: 2.5vh;
+}
+.inputAddress {
+  width: 35vw;
+  height: 10vh;
+  font-size: 18px;
+}
+.inputSpecs {
+  width: 35vw;
+  height: 15vh;
+}
+.firstLine {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 18vh;
+}
+.secondLine {
+  display: flex;
+  justify-content: center;
+  height: 18vh;
+  align-self: center;
+  margin-top: 2vh;
+}
+.cityDetails {
+  float: left;
+}
+.stateDetails {
+  margin: 0px 70px;
+}
+.inputCity,
+.inputState,
+.inputPincode {
+  width: 15vw;
+  height: 4vh;
+}
+.thirdLine {
+  display: flex;
+  justify-content: center;
+}
+.headings1 {
+  font-size: 30px;
+  margin: 20px auto;
+}
+.inputArea {
+  margin-bottom: 18px;
+}
+.area {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5vw;
+}
+#addHouseBtn {
+  margin: 50px;
+  /* height: 50px; */
+  padding: 15px 40px;
+  font-size: 20px;
+}
+#searchBtn {
+  margin-top: 50px;
+  margin-left: 50px;
+  height: 35px;
+  font-size: 15px;
+  padding: 10px 10px;
+}
+.headings {
+  font-size: 25px;
+}
+.warning {
+  color: red;
+}
+.specDetails1 {
+  margin-left: 15rem;
+}
+#col2 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.inputNameS {
+  width: 15vw;
+  height: 5vh;
+  margin-top: 1vh;
+  text-align: center;
+  font-size: 15px;
+}
+.filterBy {
+  margin-right: 60px;
+  margin-top: 52px;
+  font-size: 18px;
+}

@@ -1,0 +1,83 @@
+.profileDetails {
+  justify-content: center;
+  margin: 4vh auto;
+  width: 65%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  height: 25vh;
+  border: 2px solid;
+}
+.allBtns {
+  display: flex;
+  flex-direction: column;
+  margin: 5vh auto;
+  width: 65%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  height: 50vh;
+  border: 2px solid;
+}
+.btn {
+  width: 35%;
+  margin: 10px 45px 10px 45px;
+  font-size: 160%;
+  height: 15vh;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #4d5e8a;
+  color: white;
+}
+.houseBtns {
+  margin-top: 1vh;
+}
+.title {
+  font-size: 25px;
+  margin: 1vh auto;
+}
+
+.namedetails {
+  width: 100%;
+}
+.contactDetails {
+  width: 100%;
+  margin: auto;
+}
+.fName {
+  display: flex;
+  width: 40%;
+  float: left;
+  font-size: 20px;
+  margin-left: 10vw;
+  margin-top: 3.5vh;
+}
+.lName {
+  display: flex;
+  width: 40%;
+  float: right;
+  font-size: 20px;
+  margin-right: 1.5vw;
+  margin-top: 3.5vh;
+}
+.cnNo {
+  display: flex;
+  width: 40%;
+  float: right;
+  font-size: 20px;
+  margin-right: 2vw;
+}
+.emailID {
+  display: flex;
+  width: 40%;
+  float: left;
+  font-size: 20px;
+  margin-left: 8vw;
+}
+.welcomeMessage {
+  margin: 15px auto;
+}
