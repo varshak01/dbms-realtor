@@ -52,7 +52,7 @@ function PGadd() {
             axios.post("http://localhost:9002/pgData/add", pg)
                 .then( res => {
                     alert(res.data.message)
-                    navigate("/pgData")
+                    navigate("/dashboard")
                 })
     }
   return (<div>

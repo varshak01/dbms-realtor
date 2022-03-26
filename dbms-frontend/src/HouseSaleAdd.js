@@ -53,7 +53,7 @@ function HouseSaleAdd() {
         axios.post("http://localhost:9002/houseSale/add", house)
             .then( res => {
                 alert(res.data.message)
-                navigate("/houseSale")
+                navigate("/dashboard")
             })
     }
   return (<div>

@@ -46,13 +46,13 @@ function HouseRentAdd() {
         house={
             ...data,
             user:user1._id
-        }
+        } 
         console.log('house')
         console.log(house)
         axios.post("http://localhost:9002/houseRent/add", house)
             .then( res => {
                 alert(res.data.message)
-                navigate("/houseRent")
+                navigate("/dashboard")
             })
         // console.log('house')
         // console.log(house)

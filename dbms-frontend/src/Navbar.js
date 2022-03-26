@@ -18,7 +18,7 @@ function Navbar({setLoginUser}) {
                 </Link>
                 <p className='mainTitle'> REALTOR ATLAS
                 </p>
-                <Link to='/dashboard' className='dashLink'>
+                <Link to='/dashboard' className='dashLink' >
                     Go to Dashboard 
                 </Link>
                 <Link to='/' className='logBtn'>Logout</Link>

@@ -199,7 +199,10 @@ function PGsList() {
   return (
     <div>
         <Navbar/>
-        <form onSubmit={handleSubmit(submitForm)}>
+            <div className='housePage'>
+              <p className='headings1'>ALL PGs</p>
+              <div className='listAll'>
+              <form onSubmit={handleSubmit(submitForm)}>
           <div className='firstLine'>
           <p className='filterBy'>Filter by:</p>
              <div className='hName'>
@@ -222,9 +225,6 @@ function PGsList() {
           </div>
           
         </form>
-            <div className='housePage'>
-              <p className='headings1'>ALL PGs</p>
-              <div className='listAll'>
              <table className="table-houses ">
             <thead>
                 <tr>

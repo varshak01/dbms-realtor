@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const mongoose = require('mongoose')
 const port = process.env.PORT || 9002
-const router=express.Router();
+// const router=express.Router();
 require('dotenv').config()
 const auth=require
 const app = express()
@@ -111,12 +111,12 @@ app.post("/login", (req,res)=> {
     const { email, password} = req.body
     User.findOne({ email: email}, (err, user) => {
         if(user){
-            if(password === user.password ) {
-                res.send({message: "Login Successful", user: user})
-            } else {
+            if(password !== user.password ) {
                 res.send({ message: "Password didn't match"})
+            } else {
+                res.send({message: "Login Successful", user: user})
             }
-        } else {
+        } else {    
             res.send({message: "User not registered"})
         }
     })

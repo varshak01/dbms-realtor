@@ -108,7 +108,7 @@ function RequestsAdd() {
         axios.post("http://localhost:9002/requestsData/add", newRequest)
             .then( res => {
                 alert(res.data.message)
-                navigate("/requestsData")
+                navigate("/dashboard")
             })
       }
   return (<div>
